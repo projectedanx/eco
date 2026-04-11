@@ -22,3 +22,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1H2rlqeyUo3tdRFg3sN2LHp
 ## Cognitive Contracts & Epistemic Weaving
 * **Simulations**: Refer to `aew_simulation.py` for the CoC Enactment validation metrics.
 * **Lessons Learned**: Refer to [COGNITIVE_CONTRACT_LESSONS.md](COGNITIVE_CONTRACT_LESSONS.md) for topological discovery and constraint details.
+* **Architecture**: Refer to [ARCHITECTURE.md](ARCHITECTURE.md) for system boundaries, services, and data flow.
