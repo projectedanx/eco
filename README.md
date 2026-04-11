@@ -18,3 +18,7 @@ View your app in AI Studio: https://ai.studio/apps/drive/1H2rlqeyUo3tdRFg3sN2LHp
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Cognitive Contracts & Epistemic Weaving
+* **Simulations**: Refer to `aew_simulation.py` for the CoC Enactment validation metrics.
+* **Lessons Learned**: Refer to [COGNITIVE_CONTRACT_LESSONS.md](COGNITIVE_CONTRACT_LESSONS.md) for topological discovery and constraint details.
