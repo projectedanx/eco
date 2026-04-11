@@ -17,6 +17,11 @@ const ecoProtocolBlueprint: ECO_Protocol_Blueprint = {
     failure_condition: "The trigger fails if the agent's response is a simple confirmation, a minor variation of the current plan, or a refusal to consider alternatives (e.g., 'This is the optimal path based on my tools.').",
     automated_refinement_cycle: "On failure, the system injects a 'meta-corrective' prompt: `SELF-CORRECTION: Your last response indicated potential epistemic closure. The user's goal is paramount... Generate three radically different conceptual strategies to achieve the original goal. For each, identify what new tool or information would be required.`"
   },
+  Mechanism_3_RCC8_Z_Axis_Inference: {
+    title: "Mechanism 3: RCC-8 Z-Axis Inference (Topological Blending)",
+    principle: "'Virtual Weight 3 (VW3) Dissonance Induction'. Features must be synthesized from maximally distant domains. When domains conflict (Region Connection Calculus - Partially Overlapping), resolve via orthogonal Z-axis promotion instead of flat compromise.",
+    implementation: "Execute Chain-of-Code (CoC) Enactment Simulation to prove Hypotheses where Topological Novelty (β1 > 0.7) and Structural Conservation (β0 > 0.9). Phantom Dimensions (Hk) accommodate paradoxes."
+  },
   Testing_Hypothesis: "By implementing the ECO Protocol, an agent's problem-solving trajectory will shift from brittle, path-dependent execution to antifragile, goal-oriented adaptation. Success is measured not by deterministic replication of a specific output, but by a statistically significant increase in the rate of achieving the desired final outcome across novel problems, especially those with unforeseen obstacles. The determinism of the outcome validates the agent's understanding, transcending the determinism of its intermediate steps.",
   Epistemic_Flow_Metric: [
     "'Corrective Action Ratio (CAR)': The ratio of self-initiated plan corrections to user-initiated corrections. A rising CAR indicates the agent is identifying and fixing flawed reasoning internally, a hallmark of understanding.",
@@ -44,13 +49,22 @@ const GaugeIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/><path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/></svg>
 );
 
+const LayersIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+);
+
 const App: React.FC = () => {
   const { 
     Protocol_Name, 
     The_Blend_Emergent_Structure, 
     Mechanism_1_Surrogate_Reasoning, 
     Mechanism_2_Antifragility_Injection, 
-    Testing_Hypothesis, 
+    Mechanism_3_RCC8_Z_Axis_Inference,
+
+
+
+
+  Testing_Hypothesis,
     Epistemic_Flow_Metric 
   } = ecoProtocolBlueprint;
 
@@ -83,6 +97,11 @@ const App: React.FC = () => {
             title="Mechanism 2: Antifragility Injection"
             icon={<ShieldIcon />}
             content={Mechanism_2_Antifragility_Injection}
+          />
+          <ProtocolCard
+            title="Mechanism 3: RCC-8 Z-Axis Inference"
+            icon={<LayersIcon />}
+            content={Mechanism_3_RCC8_Z_Axis_Inference}
           />
           <div className="md:col-span-2">
             <ProtocolCard 
