@@ -8,6 +8,17 @@ export interface Mechanism {
   automated_refinement_cycle?: string;
 }
 
+export interface Feature {
+  title: string;
+  overview: string;
+  stakeholders?: string[];
+  user_stories?: string[];
+  acceptance_criteria?: string[];
+  epic_breakdown?: string[];
+  priority?: string;
+  complexity?: string;
+}
+
 export interface ECO_Protocol_Blueprint {
   Protocol_Name: string;
   The_Blend_Emergent_Structure: string;
@@ -16,4 +27,5 @@ export interface ECO_Protocol_Blueprint {
   Mechanism_3_RCC8_Z_Axis_Inference: Mechanism;
   Testing_Hypothesis: string;
   Epistemic_Flow_Metric: string[];
+  Features?: Feature[];
 }
