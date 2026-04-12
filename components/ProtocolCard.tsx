@@ -5,10 +5,10 @@ import { Mechanism } from '../types';
 interface ProtocolCardProps {
   title: string;
   icon: React.ReactNode;
-  content: string | string[] | Mechanism;
+  content: string | string[] | Mechanism | React.ReactNode;
 }
 
-const renderContent = (content: string | string[] | Mechanism) => {
+const renderContent = (content: string | string[] | Mechanism | React.ReactNode) => {
   if (typeof content === 'string') {
     return <p className="text-brand-text-secondary leading-relaxed">{content}</p>;
   }
@@ -24,6 +24,10 @@ const renderContent = (content: string | string[] | Mechanism) => {
         ))}
       </ul>
     );
+  }
+
+  if (React.isValidElement(content)) {
+    return content;
   }
 
   if (typeof content === 'object' && content !== null) {

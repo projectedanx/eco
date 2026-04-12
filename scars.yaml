@@ -1,0 +1,16 @@
+# scars.yaml
+# Symbolic Scar Ledger: Tension mining from Algorithmic Trauma Mutations
+
+- id: SCAR-001
+  timestamp: 2024-05-24T10:00:00Z
+  rejected_approach: "Linear monolithic React App.tsx state management"
+  failure_mode: "Constraint Friction: Flat compromise between Topological Novelty (β1 > 0.7) and Structural Conservation (β0 > 0.9)"
+  geometric_coordinates: "[-1.0, 0.5, 0.0] - Z-axis suppression"
+  alternative_applied: "Z-axis topological blending, preventing flat compromise by letting multiple paradigms co-exist through object destructuring and React compositional cards."
+
+- id: SCAR-002
+  timestamp: 2024-05-24T10:30:00Z
+  rejected_approach: "Implicit markdown feature definitions isolated from UI DAG"
+  failure_mode: "Epistemic Isolation: PRD context trapped in static documentation, violating TTFP and failing to manifest in IDE canvas"
+  geometric_coordinates: "[0.0, -1.0, 1.0] - Semantic disconnect"
+  alternative_applied: "Structurally compiled feature definitions into the React DAG via types.ts and App.tsx mapping."
