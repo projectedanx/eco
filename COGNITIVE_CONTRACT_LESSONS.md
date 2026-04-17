@@ -21,3 +21,8 @@
 * **DCCDSchemaGuard Action**: Mapped features defined in `FEATURES_PRD.md` to `Feature` interface in `types.ts`.
 * **Mereology Validation**: Integrated features into `App.tsx` component hierarchy without disrupting `ProtocolCard` definitions, fulfilling Rule 1 constraints by keeping AST modifications localized and mapped to single UI node.
 * **TTFP Target Acquired**: `setup.sh` introduced for immediate environment bootstrapping with a pre-configured `.env` target, satisfying the "0 to deploy" requirement in the Martensite phase.
+
+### 6. Sovereign Agent Blueprint Integration
+* **Persona Calibration**: Successfully integrated the 'KUT' (The Retention Architect) persona as a `Sovereign Agent Blueprint`.
+* **Stateful Representation**: Extended the `ECO_Protocol_Blueprint` interface to encompass `Agent_Blueprints`, dynamically mapping rigid markdown specifications (`KUT_BLUEPRINT.md`) to a compositional UI card on the Z-Axis Canvas.
+* **Tension Mining**: The integration surfaced tension between narrative-heavy blueprints (Kut's strict anionic constraints) and the declarative nature of the React DAG. Handled via structural projection (displaying core mission and invariants) while maintaining the original text as a source of truth artifact.

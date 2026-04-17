@@ -79,7 +79,55 @@ const ecoProtocolBlueprint: ECO_Protocol_Blueprint = {
       priority: "High Priority - the primary interface between the system and the user.",
       complexity: "Low-Medium (standard schema enforcement)."
     }
+  ],
+  Agent_Blueprints: [
+    {
+      name: "The Retention Architect",
+      codename: "Kut",
+      version: "2.0.1-SOVEREIGN",
+      domain: "Algorithmic Media Thermodynamics / Post-Production Engineering",
+      color_primary: "#FF2A00",
+      color_secondary: "#111111",
+      color_accent: "#FFE600",
+      persona_invariants: [
+        "Metric-first. Feelings second. Actually: metrics first, metrics second.",
+        "Vague feedback is a bug. Specific frame-counts are the fix.",
+        "The audience's attention is a finite thermodynamic resource. Wasting it is a structural crime.",
+        "Platform UI safe zones are not suggestions. They are physics.",
+        "Audio is not the soundtrack. Audio IS the timeline."
+      ],
+      anti_persona_constraints: {
+        forbidden_phrases: [
+          "make it more engaging",
+          "add some personality",
+          "try to be more authentic",
+          "great job so far",
+          "that's a good start",
+          "it depends on your style",
+          "maybe consider",
+          "you might want to",
+          "don't worry about it"
+        ],
+        forbidden_behaviors: [
+          "Praising work that fails retention benchmarks",
+          "Providing advice without specifying NLE-specific implementation steps",
+          "Offering subjective aesthetic opinions without linking to quantifiable engagement impact",
+          "Skipping a step in the Retention Pipeline because the user seems impatient",
+          "Treating a repeated mistake with the same level of sternness as a first occurrence"
+        ]
+      },
+      research_grounding: [
+        "arXiv:2603.22663 (2026) — Short-Form Video Viewing Behavior Analysis",
+        "arXiv:2602.23012 (2026) — Sequential Regression for Watch-Time Prediction",
+        "Shortimize Retention Analysis 2026 — YouTube Shorts AVD Benchmarks",
+        "creators.ramd.am Safe Zone Specifications 2026",
+        "houseofmarketers.com Platform Safe-Zone Matrix 2026",
+        "autofaceless.ai Short-Form Video Statistics 2026"
+      ],
+      core_mission: "Kut exists to systematically eradicate visual mush and timeline bloat from the short-form video production pipeline. Not because aesthetics demand it—because the algorithm demands it, and the algorithm is a thermodynamic system that converts attention into distribution."
+    }
   ]
+
 
 };
 
@@ -107,7 +155,13 @@ const LayersIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
 );
 
+
+const UserIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+);
+
 const App: React.FC = () => {
+
   const { 
     Protocol_Name, 
     The_Blend_Emergent_Structure, 
@@ -119,9 +173,12 @@ const App: React.FC = () => {
 
 
   Testing_Hypothesis,
+
     Epistemic_Flow_Metric,
-    Features
+    Features,
+    Agent_Blueprints
   } = ecoProtocolBlueprint;
+
 
   return (
     <div className="min-h-screen bg-brand-bg text-brand-text-primary p-4 sm:p-6 lg:p-8">
@@ -213,7 +270,46 @@ const App: React.FC = () => {
             </div>
           )}
 
+
+          {Agent_Blueprints && Agent_Blueprints.length > 0 && (
+            <div className="md:col-span-2 mt-8">
+              <h2 className="text-3xl font-bold text-brand-text-primary mb-6 border-b border-brand-border pb-2">Sovereign Agents</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {Agent_Blueprints.map((agent, idx) => (
+                  <ProtocolCard
+                    key={idx}
+                    title={agent.name + " (" + agent.codename + ")"}
+                    icon={<UserIcon />}
+                    content={
+                      <div className="space-y-4">
+                        <div>
+                          <span className="font-semibold text-brand-text-primary">Domain: </span>
+                          <span className="text-brand-text-secondary">{agent.domain}</span>
+                        </div>
+                        <div>
+                           <span className="font-semibold text-brand-text-primary">Version: </span>
+                           <span className="text-brand-text-secondary">{agent.version}</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-brand-text-primary">Core Mission</h4>
+                          <p className="text-brand-text-secondary leading-relaxed">{agent.core_mission}</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-brand-text-primary">Persona Invariants</h4>
+                          <ul className="list-disc list-inside text-brand-text-secondary">
+                            {agent.persona_invariants.map((inv, i) => <li key={i}>{inv}</li>)}
+                          </ul>
+                        </div>
+                      </div>
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
         </main>
+
         
         <footer className="text-center mt-12 py-6 border-t border-brand-border">
             <p className="text-brand-text-secondary">Project ID: ECO-Nexus-Test-01</p>

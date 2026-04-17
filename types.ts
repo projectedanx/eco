@@ -1,4 +1,3 @@
-
 export interface Mechanism {
   title: string;
   principle?: string;
@@ -19,6 +18,23 @@ export interface Feature {
   complexity?: string;
 }
 
+export interface AgentBlueprint {
+  name: string;
+  codename: string;
+  version: string;
+  domain: string;
+  color_primary: string;
+  color_secondary: string;
+  color_accent: string;
+  persona_invariants: string[];
+  anti_persona_constraints: {
+    forbidden_phrases: string[];
+    forbidden_behaviors: string[];
+  };
+  research_grounding: string[];
+  core_mission: string;
+}
+
 export interface ECO_Protocol_Blueprint {
   Protocol_Name: string;
   The_Blend_Emergent_Structure: string;
@@ -28,4 +44,5 @@ export interface ECO_Protocol_Blueprint {
   Testing_Hypothesis: string;
   Epistemic_Flow_Metric: string[];
   Features?: Feature[];
+  Agent_Blueprints?: AgentBlueprint[];
 }
