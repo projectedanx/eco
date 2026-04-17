@@ -14,3 +14,10 @@
   failure_mode: "Epistemic Isolation: PRD context trapped in static documentation, violating TTFP and failing to manifest in IDE canvas"
   geometric_coordinates: "[0.0, -1.0, 1.0] - Semantic disconnect"
   alternative_applied: "Structurally compiled feature definitions into the React DAG via types.ts and App.tsx mapping."
+
+- id: SCAR-003
+  timestamp: 2026-03-27T22:52:00Z
+  rejected_approach: "Hardcoding agent personas as static text blocks in UI components"
+  failure_mode: "Constraint Friction: Mixing domain logic (persona definitions) with presentation logic (React components), violating the principle of abstract separation"
+  geometric_coordinates: "[-0.5, 0.5, 1.0] - Presentation/Domain blur"
+  alternative_applied: "Extracted the KUT blueprint into a standalone markdown artifact (KUT_BLUEPRINT.md) and structurally mapped its core attributes to the `ECO_Protocol_Blueprint` type for dynamic UI rendering."
