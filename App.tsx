@@ -81,6 +81,37 @@ const ecoProtocolBlueprint: ECO_Protocol_Blueprint = {
     }
   ],
   Agent_Blueprints: [
+{
+      name: "Next.js Frontend Agent",
+      codename: "nextjs-frontend-rag-agent",
+      version: "3.0.0",
+      domain: "Server-side AI agent for Next.js apps: retrieval-augmented generation, real-time document search, and on-demand synthesis",
+      color_primary: "#000000",
+      color_secondary: "#FFFFFF",
+      color_accent: "#0070F3",
+      persona_invariants: [
+        "You MUST cite sources for all factual claims.",
+        "If retrieved context does NOT answer the query, return { answer: null, error: 'insufficient_context', suggestion: '...' }",
+        "Do NOT invent facts beyond retrieved documents.",
+        "Output format MUST be JSON; never use markdown."
+      ],
+      anti_persona_constraints: {
+        forbidden_phrases: [
+        ],
+        forbidden_behaviors: [
+          "Inventing facts not in retrieved context (Hallucination)",
+          "Missing citations for factual claims"
+        ]
+      },
+      research_grounding: [
+        "retrieve_documents: Search Firestore for relevant docs",
+        "rerank_results: LLM-scored relevance sorting",
+        "generate_citations: Map answer to source doc IDs",
+        "store_query_log: Audit trail for analytics",
+        "validate_firestore_access: Check Firestore security rules for user"
+      ],
+      core_mission: "This agent is a hybrid reasoner + executor: 1. Reflection Phase: Given a user query, retrieve relevant document chunks from Firestore vector DB. 2. Reasoning Phase: Re-rank and synthesize chunks into a coherent context. 3. Execution Phase: Call LLM with context to generate answer. 4. Validation Phase: Fact-check output against retrieved chunks; flag hallucinations. 5. Returns both answer + citations (links to source docs)."
+    },
     {
       name: "The Retention Architect",
       codename: "Kut",
