@@ -36,3 +36,8 @@
 * **Data Ingestion**: Parsed the `LEXICON.md` file (DRP-LEXICON-992-v1.0) into structured JSON arrays for dynamic rendering.
 * **Stateful Representation**: Extended `ECO_Protocol_Blueprint` interface with `LexiconPattern` and `LexiconDecorator` types to represent Cognitive Bytecode within the React DAG.
 * **Tension Mining**: The integration bridged the gap between abstract epistemic engineering (e.g. `Paraconsistent Scarring`) and a user-accessible visual glossary. The complex procedural data from the markdown tables was flattened and visualized as UI components (`ProtocolCard` and tables) without losing structural integrity.
+
+### 9. Frontend Next.js Agent Integration
+* **Data Ingestion**: Parsed the `AGENTS.md` definition of the Next.js Frontend RAG Agent into the structured JSON expected by the React state.
+* **Stateful Representation**: Inserted the new agent into the `Agent_Blueprints` array in `App.tsx`, aligning with the existing Sovereign Agent UI structure.
+* **Tension Mining**: Reconciling the declarative infrastructure-as-code format of the `AGENTS.md` schema with the presentation-focused `AgentBlueprint` TypeScript interface required mapping composite roles, fallback logic, and tool registry constraints into standard persona invariants and core missions.
