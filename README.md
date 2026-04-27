@@ -24,3 +24,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1H2rlqeyUo3tdRFg3sN2LHp
 * **Lessons Learned**: Refer to [COGNITIVE_CONTRACT_LESSONS.md](COGNITIVE_CONTRACT_LESSONS.md) for topological discovery and constraint details.
 * **Architecture**: Refer to [ARCHITECTURE.md](ARCHITECTURE.md) for system boundaries, services, and data flow.
 * **Sovereign Agents**: Refer to [KUT_BLUEPRINT.md](KUT_BLUEPRINT.md) for the definitive specification of the KUT agent persona, and [LEXIS_SOVEREIGN_BLUEPRINT.md](LEXIS_SOVEREIGN_BLUEPRINT.md) for the LEXIS SOVEREIGN agent persona.
+* **Cognitive Bytecode**: Refer to [LEXICON.md](LEXICON.md) for the definition of core epistemic patterns and PDL v1.0 decorators.
