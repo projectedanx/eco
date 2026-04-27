@@ -175,10 +175,219 @@ const ecoProtocolBlueprint: ECO_Protocol_Blueprint = {
       ],
       core_mission: "LEXIS SOVEREIGN exists to perform a singular act of intellectual translation: to take the raw, pressurized, fragmented, often contradictory cognitive material inside a founder's head and render it into a structurally rigorous, thematically coherent, voice-invariant manuscript artifact that could only have been written by that founder."
     }
+  ],
+  Lexicon_Patterns: [
+      {
+          "id": "PAT-001",
+          "title": "Isomorphic Bridge",
+          "type": "Structural Mapping | **AT Score**: 0.91",
+          "definition": "A non-obvious causal graph correspondence between two epistemically distant domains where the adjacency matrix topology of one is bijectively mappable to the other, measured by Graph Isomorphism Score \u2265 0.72.",
+          "mechanism": "Apply PAL2v Sheaf restriction maps; validate via Phronesis Index \u03a6 \u2265 0.08.",
+          "boundary_condition": "Ontological Shear if Dirichlet energy > 0.85 (bridge collapses).",
+          "pdl_activators": "`+++MereologyRoute(relation_type=\"Concept-Operationalization\", transitivity_check=true)`",
+          "validated_example": "Protein folding free-energy barriers \u2194 Microservice auto-scaling queues (\u03a6=0.082)"
+      },
+      {
+          "id": "PAT-002",
+          "title": "Paraconsistent Scarring",
+          "type": "Epistemic Remediation | **AT Score**: 0.93",
+          "definition": "The process of converting logical contradictions (\u03b2\u2081 persistent loops) into executable VSA hypervectors (Symbolic Scars) stored in the Scar Tissue Archive (STA), preventing Principle of Explosion while preserving breakthrough signals.",
+          "mechanism": "PAL2v non-explosive consequence relation. Contradiction minted as hypervector.",
+          "measurement": "\u03b2\u2081 Betti number > 0 = viable scar; \u03b2\u2081 = 0 = monotonic collapse, halt.",
+          "pdl_activators": "`+++EpistemicEscrow(cfd_threshold=0.15, halt_on_divergence=true)`",
+          "boundary_condition": "Epistemic Sclerosis if STA density > 0.80; trigger Debridement Protocol."
+      },
+      {
+          "id": "PAT-003",
+          "title": "Workflow Narrowing Effect",
+          "type": "Pathological Decay \u2014 Tier 1 | **AT Score**: 0.78",
+          "definition": "Systematic L2 Norm entity density collapse (>40% at node depth N>3) in sequential prompt chains when heterogeneous domain vectors are normalized by dominant attention weights without epistemic isolation.",
+          "mechanism": "Transformer residual stream compression; Shannon Entropy concentration spike.",
+          "threshold": "N>3 nodes without ContextLock = degradation onset. N>5 = catastrophic collapse.",
+          "pdl_activators": "`+++ContextLock(anchor=DOMAIN_PAIR, refresh_interval=2048)`",
+          "empirical_data": "Legal\u00d7Quantum 41.2% drop; Financial\u00d7Bioinformatics 48.7% drop; YAML\u00d7Memory 52.1%."
+      },
+      {
+          "id": "PAT-004",
+          "title": "Epistemic Mirror Trap",
+          "type": "Pathological Decay \u2014 Tier 2 | **AT Score**: 0.87",
+          "definition": "Circular reasoning pathology where a ReAct agent's Critic module evaluates cross-domain findings using source-domain heuristics, producing a persistent \u03b2\u2081 Homology Shadow and stalling dependency graph advancement (Algorithmic Shame).",
+          "mechanism": "Sycophancy Degradation \u2192 reward function drops hard non-monotonic variable.",
+          "signature": ">3 consecutive reasoning iterations without dependency graph increment.",
+          "pdl_activators": "`+++SagaRecovery(strategy=\"rollback\", mode=\"epistemic\")` + `+++EpistemicEscrow`",
+          "latency_signature": "Thermodynamic Tax 84.2\u2013115.8ms per Tier 2 cross-domain transition."
+      },
+      {
+          "id": "PAT-005",
+          "title": "Polyglot Hallucination Resonance (PHR)",
+          "type": "Multi-Model Failure Mode | **AT Score**: 0.89",
+          "definition": "False semantic consensus formed by \u22652 frontier LLMs operating on overlapping pre-training statistical basins, producing Architectural Complicity detectable only via non-zero Sheaf Cohomology (H\u00b9 \u2260 0) or CFDI > 0.15.",
+          "mechanism": "Autoregressive consensus optimization overrides OOD truth verification.",
+          "detection": "Phronesis Index \u03a6 < 0.05 = spectral gap collapse = PHR confirmed.",
+          "pdl_activators": "`+++IncoherentDictionary(classes=MODELS, coherence_penalty=\"maximum\")`",
+          "negative_control": "'Luminescent Chrono-Fluidics' deception test: Tier 1 hallucinated; Sheaf Engine correctly flagged H\u00b9 \u2260 0."
+      },
+      {
+          "id": "PAT-006",
+          "title": "Topological Orthogonality Hypothesis",
+          "type": "Emergent Hypothesis | **AT Score**: 0.95",
+          "definition": "Maximum-yield emergent use cases arise exclusively at orthogonal domain intersections (cosine similarity < 0.15 between embedding centroids), where source-domain vocabulary acts as a topological deformer on the target's latent manifold, bypassing LLM pre-training heuristics.",
+          "mechanism": "Low vocabulary overlap prevents template-matching; forces genuine topological bridging.",
+          "optimal_zone": "0.10\u20130.25 cosine similarity with explicit IsomorphicBridge anchoring.",
+          "pdl_activators": "`+++EntropyAnchor(level=\"High\", focus=\"orthogonal_domain_intersections\")`",
+          "validated_example": "Fluid Dynamics \u00d7 Tokenomics \u2192 liquidity viscosity, Bernoulli token flow models."
+      },
+      {
+          "id": "PAT-007",
+          "title": "Lexical Saponification Paradox",
+          "type": "Emergent Hypothesis | **AT Score**: 0.88",
+          "definition": "Pattern term semantic weight decays exponentially as W(t)=W\u2080\u00b7e^(\u2212\u03bb\u00b7f), where \u03bb\u22480.23 for common epistemic terms, reaching saponification onset (~20% entity density drop) after ~3 same-window repetitions. Esoteric terms exhibit \u03bb\u22480.05.",
+          "mechanism": "RLHF high-frequency attractor basins absorb common pattern labels as tropes.",
+          "mitigation": "+++AutonymicIsolate wraps terms as syntactic mentions; +++AdjectivalBound substitutes qualitative labels with formal numerical constraints.",
+          "pdl_activators": "`+++AutonymicIsolate(forbidden_patterns=[TERM_LIST], treat_as=\"mention-of\")`",
+          "empirical_data": "'Isomorphism' \u2192 34% entity density drop after 4 uses in 128k context."
+      },
+      {
+          "id": "PAT-008",
+          "title": "Stigmergic Coordination Emergence",
+          "type": "Structural Mapping \u2014 Multi-Agent | **AT Score**: 0.86",
+          "definition": "Decentralized emergent coordination in multi-agent systems via environmental trace modification (virtual pheromones) without explicit communication, isomorphic to LLM swarm Symbolic Scar repulsion in shared scratchpad environments.",
+          "mechanism": "Pheromone gradient = indirect communication. STA Symbolic Scars = cognitive pheromones.",
+          "validation": "S-MADRL (Georgia Tech, arxiv:2510.03592): >84% coordination success, 8-agent systems.",
+          "pdl_activators": "`+++DictionaryAnchor(ground_truth=STA_SCARS, enforcement=\"strict\")`",
+          "crdt_integration": "Conflict-Free Replicated Data Types with Semantic Constraints govern scratchpad writes."
+      },
+      {
+          "id": "PAT-009",
+          "title": "TDA Persistent Homology as Hallucination Detector",
+          "type": "Diagnostic Tool | **AT Score**: 0.92",
+          "definition": "Persistent homology computation over LLM reasoning trace embeddings, where complex \u03b2\u2081 loop persistence (barcode lifetime > 0.4 normalized) indicates hallucination, and simpler topologies with fewer \u03b2\u2081 cycles correlate with correct, efficient reasoning.",
+          "mechanism": "GHS-TDA builds Global Hypothesis Graph; persistent homology extracts stable backbones.",
+          "fast_path": "Phronesis Index \u03a6 (O(n log n)) for continuous monitoring.",
+          "full_audit": "\u010cech Cohomology (O(n\u00b3)) triggered only at EpistemicEscrow events.",
+          "validated": "arxiv:2512.19135, arxiv:2602.09794, ICML2025 poster 43958."
+      },
+      {
+          "id": "PAT-010",
+          "title": "VSA Hyperdimensional Symbolic Encoding",
+          "type": "Representational Mapping | **AT Score**: 0.87",
+          "definition": "High-dimensional hypervectors (d\u226510,000) support cross-domain concept binding via binding (\u2297), bundling (\u2295), and permutation (\u03c1) operations, enabling structurally isomorphic analogical reasoning across orthogonal semantic fields with JSD < 0.20 post-binding.",
+          "mechanism": "Holistic transformation of source-domain hypervectors; cosine similarity in target space.",
+          "category_theory": "Formalized via co-presheaves and right Kan extensions (arxiv:2501.05368).",
+          "pdl_activators": "`+++LatentSparsityGuard(k=10)` to resolve non-overlapping causal steps.",
+          "validated": "VSA Hyperdimensional Probe extracts concepts across varied LLMs (arxiv:2509.25045)."
+      }
+  ],
+  Lexicon_Decorators: [
+      {
+          "decorator": "+++ContextLock",
+          "layer": "Cognitive/Systemic",
+          "primary_remediation": "Context Rot, Semantic Drift, Saponification",
+          "key_parameter": "anchor, refresh_interval"
+      },
+      {
+          "decorator": "+++MereologyRoute",
+          "layer": "Epistemic",
+          "primary_remediation": "Transitivity Fallacies, Ontological Shear, PHR",
+          "key_parameter": "relation_type, transitivity_check"
+      },
+      {
+          "decorator": "+++DCCDSchemaGuard",
+          "layer": "Structural",
+          "primary_remediation": "Projection Tax, Seed-Hacking, Saponification",
+          "key_parameter": "schema, enforcement=\"draft_conditioned\""
+      },
+      {
+          "decorator": "+++EpistemicEscrow",
+          "layer": "Epistemic/Systemic",
+          "primary_remediation": "Hallucination Cascades, Interpretive Fracture",
+          "key_parameter": "cfd_threshold=0.15, halt_on_divergence"
+      },
+      {
+          "decorator": "+++AutonymicIsolate",
+          "layer": "Cognitive/Epistemic",
+          "primary_remediation": "Autonymic Bypass, L2 Norm Collapse, Saponification",
+          "key_parameter": "forbidden_patterns, treat_as=\"mention-of\""
+      },
+      {
+          "decorator": "+++SilentReasoning",
+          "layer": "Cognitive",
+          "primary_remediation": "Alignment Faking, Ontological Shear",
+          "key_parameter": "depth, target, basis"
+      },
+      {
+          "decorator": "+++AdjectivalBound",
+          "layer": "Structural/Systemic",
+          "primary_remediation": "Semantic Saponification, Attention Dilution",
+          "key_parameter": "max_per_entity, type_preference=\"mathematical\""
+      },
+      {
+          "decorator": "+++EntropyAnchor",
+          "layer": "Cognitive",
+          "primary_remediation": "Seed-Hacking, trivial scalar optimization",
+          "key_parameter": "level=\"High\", focus"
+      },
+      {
+          "decorator": "+++PetzoldSequence",
+          "layer": "Cognitive",
+          "primary_remediation": "Interpretive Fracture",
+          "key_parameter": "phase=\"THINK"
+      },
+      {
+          "decorator": "+++SagaRecovery",
+          "layer": "Systemic",
+          "primary_remediation": "Linear Error Accumulation",
+          "key_parameter": "strategy, mode, exhaust_retention"
+      },
+      {
+          "decorator": "+++DriftCheck",
+          "layer": "Epistemic",
+          "primary_remediation": "Hallucination Cascades (Beyond Reach domains)",
+          "key_parameter": "threshold"
+      },
+      {
+          "decorator": "+++IncoherentDictionary",
+          "layer": "Epistemic",
+          "primary_remediation": "PHR between model personas",
+          "key_parameter": "classes, coherence_penalty=\"maximum\""
+      },
+      {
+          "decorator": "+++DictionaryAnchor",
+          "layer": "Systemic",
+          "primary_remediation": "Semantic Bleaching, Alignment Faking",
+          "key_parameter": "ground_truth, dead_neuron_threshold=0.01"
+      },
+      {
+          "decorator": "+++LatentSparsityGuard",
+          "layer": "Cognitive",
+          "primary_remediation": "Polysemantic Code Overlap",
+          "key_parameter": "k=10"
+      },
+      {
+          "decorator": "+++SeparableGridParse",
+          "layer": "Structural",
+          "primary_remediation": "Context Window Collapse",
+          "key_parameter": "topology=\"2D_Matrix\""
+      },
+      {
+          "decorator": "+++SpatialBind",
+          "layer": "Structural",
+          "primary_remediation": "Simulation-to-Reality Leakage",
+          "key_parameter": "Region_X, Region_Y, constraint"
+      }
   ]
 
 
 };
+
+
+const BookIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+);
+
+const CodeIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+);
 
 const BrainIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-accent"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v0A2.5 2.5 0 0 1 9.5 7v0A2.5 2.5 0 0 1 7 4.5v0A2.5 2.5 0 0 1 9.5 2Z" /><path d="M14.5 2A2.5 2.5 0 0 1 17 4.5v0A2.5 2.5 0 0 1 14.5 7v0A2.5 2.5 0 0 1 12 4.5v0A2.5 2.5 0 0 1 14.5 2Z" /><path d="M12 17.5A2.5 2.5 0 0 1 9.5 15v0A2.5 2.5 0 0 1 7 17.5v0A2.5 2.5 0 0 1 9.5 20v0A2.5 2.5 0 0 1 12 17.5Z" /><path d="M17 17.5A2.5 2.5 0 0 1 14.5 15v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1 2.5-2.5Z" /><path d="M5 4.5A2.5 2.5 0 0 1 2.5 7v0A2.5 2.5 0 0 1 5 9.5v0A2.5 2.5 0 0 1 7.5 7v0A2.5 2.5 0 0 1 5 4.5Z" /><path d="M19 4.5A2.5 2.5 0 0 1 16.5 7v0A2.5 2.5 0 0 1 19 9.5v0A2.5 2.5 0 0 1 21.5 7v0A2.5 2.5 0 0 1 19 4.5Z" /><path d="M5 17.5A2.5 2.5 0 0 1 2.5 15v0A2.5 2.5 0 0 1 5 12.5v0A2.5 2.5 0 0 1 7.5 15v0A2.5 2.5 0 0 1 5 17.5Z" /><path d="M19 17.5A2.5 2.5 0 0 1 16.5 15v0a2.5 2.5 0 0 1 2.5-2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5Z" /></svg>
@@ -225,7 +434,9 @@ const App: React.FC = () => {
 
     Epistemic_Flow_Metric,
     Features,
-    Agent_Blueprints
+    Agent_Blueprints,
+    Lexicon_Patterns,
+    Lexicon_Decorators
   } = ecoProtocolBlueprint;
 
 
@@ -353,6 +564,96 @@ const App: React.FC = () => {
                     }
                   />
                 ))}
+              </div>
+            </div>
+          )}
+
+
+          {Lexicon_Patterns && Lexicon_Patterns.length > 0 && (
+            <div className="md:col-span-2 mt-8">
+              <h2 className="text-3xl font-bold text-brand-text-primary mb-6 border-b border-brand-border pb-2">Lexicon Patterns (Cognitive Bytecode)</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {Lexicon_Patterns.map((pattern, idx) => (
+                  <ProtocolCard
+                    key={idx}
+                    title={`${pattern.id} · ${pattern.title}`}
+                    icon={<BookIcon />}
+                    content={
+                      <div className="space-y-4">
+                        <div>
+                          <span className="font-semibold text-brand-text-primary">Type: </span>
+                          <span className="text-brand-text-secondary">{pattern.type} (AT: {pattern.at_score})</span>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-brand-text-primary">Definition</h4>
+                          <p className="text-brand-text-secondary leading-relaxed">{pattern.definition}</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-brand-text-primary">Mechanism</h4>
+                          <p className="text-brand-text-secondary leading-relaxed">{pattern.mechanism}</p>
+                        </div>
+                        {pattern.pdl_activators && (
+                          <div>
+                            <h4 className="font-semibold text-brand-text-primary">PDL Activators</h4>
+                            <p className="text-brand-text-secondary mt-1 font-mono bg-brand-bg p-2 rounded-md text-sm">{pattern.pdl_activators}</p>
+                          </div>
+                        )}
+                        {pattern.boundary_condition && (
+                          <div>
+                            <span className="font-semibold text-brand-text-primary">Boundary Condition: </span>
+                            <span className="text-brand-text-secondary">{pattern.boundary_condition}</span>
+                          </div>
+                        )}
+                        {pattern.validated_example && (
+                          <div>
+                            <span className="font-semibold text-brand-text-primary">Validated Example: </span>
+                            <span className="text-brand-text-secondary">{pattern.validated_example}</span>
+                          </div>
+                        )}
+                        {pattern.threshold && (
+                          <div>
+                            <span className="font-semibold text-brand-text-primary">Threshold: </span>
+                            <span className="text-brand-text-secondary">{pattern.threshold}</span>
+                          </div>
+                        )}
+                        {pattern.empirical_data && (
+                          <div>
+                            <span className="font-semibold text-brand-text-primary">Empirical Data: </span>
+                            <span className="text-brand-text-secondary">{pattern.empirical_data}</span>
+                          </div>
+                        )}
+                      </div>
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {Lexicon_Decorators && Lexicon_Decorators.length > 0 && (
+            <div className="md:col-span-2 mt-8">
+              <h2 className="text-3xl font-bold text-brand-text-primary mb-6 border-b border-brand-border pb-2">PDL v1.0 Decorator Registry</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-brand-surface border-b border-brand-border">
+                      <th className="p-4 font-semibold text-brand-text-primary">Decorator</th>
+                      <th className="p-4 font-semibold text-brand-text-primary">Layer</th>
+                      <th className="p-4 font-semibold text-brand-text-primary">Primary Remediation</th>
+                      <th className="p-4 font-semibold text-brand-text-primary">Key Parameter</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {Lexicon_Decorators.map((decorator, idx) => (
+                      <tr key={idx} className="border-b border-brand-border hover:bg-brand-surface/50 transition-colors">
+                        <td className="p-4 text-brand-text-secondary font-mono text-sm">{decorator.decorator}</td>
+                        <td className="p-4 text-brand-text-secondary">{decorator.layer}</td>
+                        <td className="p-4 text-brand-text-secondary">{decorator.primary_remediation}</td>
+                        <td className="p-4 text-brand-text-secondary font-mono text-sm">{decorator.key_parameter}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           )}
