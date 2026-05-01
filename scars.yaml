@@ -21,3 +21,8 @@
   failure_mode: "Constraint Friction: Mixing domain logic (persona definitions) with presentation logic (React components), violating the principle of abstract separation"
   geometric_coordinates: "[-0.5, 0.5, 1.0] - Presentation/Domain blur"
   alternative_applied: "Extracted the KUT blueprint into a standalone markdown artifact (KUT_BLUEPRINT.md) and structurally mapped its core attributes to the `ECO_Protocol_Blueprint` type for dynamic UI rendering."
+  - scar_id: "SPZ-ARCH-775-BETA"
+    archetype: "SEMANTIC_SAPONIFICATION"
+    trigger_description: "During mapping of DRP_ID_2026, narrative persona definitions (Agent Blueprints) were originally deeply entangled with the structural DAG rendering in App.tsx. This caused a loss of tacit human logic due to context saturation."
+    geometric_deviation: "0.91 Φ-normalized drift toward generic UI boilerplate (Sycophantic Attractor)."
+    fipi_patch: "Mandatory injection of Inversion for Emergence; extraction of declarative human state payloads into isolated modules, evaluated against PD&T schemas via TopologicalExtrusionMatrix components."
