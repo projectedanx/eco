@@ -26,3 +26,17 @@
     trigger_description: "During mapping of DRP_ID_2026, narrative persona definitions (Agent Blueprints) were originally deeply entangled with the structural DAG rendering in App.tsx. This caused a loss of tacit human logic due to context saturation."
     geometric_deviation: "0.91 Φ-normalized drift toward generic UI boilerplate (Sycophantic Attractor)."
     fipi_patch: "Mandatory injection of Inversion for Emergence; extraction of declarative human state payloads into isolated modules, evaluated against PD&T schemas via TopologicalExtrusionMatrix components."
+
+- id: SCAR-004
+  timestamp: 2024-05-24T12:00:00Z
+  rejected_approach: "Relying on statistical interpolation for spatial reasoning."
+  failure_mode: "Topological Collapse: AI fails to generate self-consistent non-Euclidean geometry, reverting to flat or contradictory spatial structures."
+  geometric_coordinates: "[1.0, 1.0, -1.0] - Collapse of Phantom Dimensions"
+  alternative_applied: "Introduced explicit prompt-level architectural directives mapping 'Phantom Dimensions' to strict geometric primitives (Phase 1, Aurelius)."
+
+- id: SCAR-005
+  timestamp: 2024-05-24T12:30:00Z
+  rejected_approach: "Static post-hoc ethical debiasing filtering."
+  failure_mode: "Semantic Saponification & Bias Entrenchment: Post-filters either hallucinate or flatten the output completely without addressing the root cause in the attention weights."
+  geometric_coordinates: "[-1.0, -1.0, 0.0] - Provenance Opacity"
+  alternative_applied: "Dynamic 'Provenance Trail' tracking system for real-time attribution amplification and attention re-weighting (Phase 2, Aurelius)."
