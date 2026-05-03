@@ -1,0 +1,6 @@
+feat(AURELIUS): initialize Aurelius strategy and update cognitive lessons
+
+- Created `AURELIUS_STRATEGY/plan.md` defining "Inverting for Emergence".
+- Created `AURELIUS_STRATEGY/checklist.md` with implementation milestones.
+- Updated `COGNITIVE_CONTRACT_LESSONS.md` with Geometric Cognition.
+- Logged new tensions in `scars.yaml`.
