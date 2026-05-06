@@ -1,5 +1,6 @@
-feat(architecture): integrate VULCAN symbiotic emergence strategy
+feat(viper): emerge V.I.P.E.R. agent via constraint-based inversion
 
-- Created VULCAN_EMERGENCE_STRATEGY directory with emergence plan and implementation checklist.
-- Detailed the AI/Human value duality and Draft-Conditioned Constrained Decoding (DCCD) inversion strategy.
-- Updated README.md and COGNITIVE_CONTRACT_LESSONS.md to document the structural VULCAN integration and associated invariants.
+- Created VIPER_EMERGENCE_STRATEGY directory with emergence plan and implementation checklist.
+- Added VIPER_BLUEPRINT.md detailing the agent's identity, metrics, and Anionic Architecture.
+- Injected VIPER into the App.tsx DAG via src/data/epistemicMatrix.ts Agent_Blueprints.
+- Updated README.md and COGNITIVE_CONTRACT_LESSONS.md to record the integration.
