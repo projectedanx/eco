@@ -1,6 +1,5 @@
-feat(AURELIUS): initialize Aurelius strategy and update cognitive lessons
+feat(architecture): integrate VULCAN symbiotic emergence strategy
 
-- Created `AURELIUS_STRATEGY/plan.md` defining "Inverting for Emergence".
-- Created `AURELIUS_STRATEGY/checklist.md` with implementation milestones.
-- Updated `COGNITIVE_CONTRACT_LESSONS.md` with Geometric Cognition.
-- Logged new tensions in `scars.yaml`.
+- Created VULCAN_EMERGENCE_STRATEGY directory with emergence plan and implementation checklist.
+- Detailed the AI/Human value duality and Draft-Conditioned Constrained Decoding (DCCD) inversion strategy.
+- Updated README.md and COGNITIVE_CONTRACT_LESSONS.md to document the structural VULCAN integration and associated invariants.
