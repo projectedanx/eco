@@ -25,3 +25,6 @@ View your app in AI Studio: https://ai.studio/apps/drive/1H2rlqeyUo3tdRFg3sN2LHp
 * **Architecture**: Refer to [ARCHITECTURE.md](ARCHITECTURE.md) for system boundaries, services, and data flow.
 * **Sovereign Agents**: Refer to [KUT_BLUEPRINT.md](KUT_BLUEPRINT.md) for the definitive specification of the KUT agent persona, and [LEXIS_SOVEREIGN_BLUEPRINT.md](LEXIS_SOVEREIGN_BLUEPRINT.md) for the LEXIS SOVEREIGN agent persona.
 * **Cognitive Bytecode**: Refer to [LEXICON.md](LEXICON.md) for the definition of core epistemic patterns and PDL v1.0 decorators.
+
+### VULCAN Emergence Strategy Integration
+The repository now includes the `VULCAN_EMERGENCE_STRATEGY/` directory, which houses the overarching plan and implementation checklist for integrating the "VULCAN (Vector-Unified Logical Computing Architect Node)" persona. This integration enforces a symbiotic inversion strategy: AI dictates rigorous, mathematical topological constraints (schema), while the Human Operator provides the tacit, operational semantic intent. This approach prevents "Semantic Saponification" and ensures strict adherence to Domain-Driven Design (DDD) invariants.
