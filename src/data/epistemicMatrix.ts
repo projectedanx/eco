@@ -1,5 +1,10 @@
 import { Feature, AgentBlueprint, LexiconPattern, LexiconDecorator } from '../../types';
 
+/**
+ * A collection of Pluriversal Codebase Features.
+ * These represent the high-level functional capabilities and requirements
+ * mapped out for the ECO Protocol.
+ */
 export const Features: Feature[] = [
   {
     title: "Feature 1: Agentic Drift Quarantine Engine (ADQE)",
@@ -53,6 +58,12 @@ export const Features: Feature[] = [
   }
 ];
 
+/**
+ * A collection of strictly defined Agent Blueprints.
+ * These serve as the foundational constraints and persona definitions for
+ * the autonomous nodes within the pluriversal architecture (e.g., KUT, LEXIS, VIPER).
+ * They dictate domain logic, behavioral invariants, and forbidden anti-personas.
+ */
 export const Agent_Blueprints: AgentBlueprint[] = [
   {
     name: "Next.js Frontend Agent",
@@ -193,6 +204,11 @@ export const Agent_Blueprints: AgentBlueprint[] = [
   }
 ];
 
+/**
+ * A catalog of Cognitive Bytecode definitions representing structural mappings
+ * and pathological decay scenarios encountered during context optimization.
+ * Examples include 'Isomorphic Bridge' and 'Paraconsistent Scarring'.
+ */
 export const Lexicon_Patterns: LexiconPattern[] = [
   {
     id: "PAT-001",
@@ -237,6 +253,11 @@ export const Lexicon_Patterns: LexiconPattern[] = [
   }
 ];
 
+/**
+ * A set of Prompt Decorator Language (PDL) commands.
+ * These decorators are utilized to explicitly route attention, enforce mereological
+ * boundaries, and trigger epistemic escrow to remediate latent pathologies.
+ */
 export const Lexicon_Decorators: LexiconDecorator[] = [
   {
     decorator: "+++ContextLock(anchor=...)",

@@ -1,6 +1,17 @@
 import re
 
 def update_readme():
+    """
+    Updates the README.md file to include the V.I.P.E.R. Emergence Strategy.
+
+    This function reads the 'README.md' file, searches for the Sovereign Agents
+    list section, and inserts a bullet point linking to the VIPER blueprint and
+    strategy directory. The modified content is written back to the file.
+
+    Returns:
+        None: Prints a success message upon successful patching, or a warning
+              if the target section cannot be found or if VIPER is already added.
+    """
     with open('README.md', 'r') as f:
         content = f.read()
 

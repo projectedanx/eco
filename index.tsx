@@ -1,3 +1,8 @@
+/**
+ * Entry point for the React application.
+ * Bootstraps the React tree and mounts the root `App` component to the DOM.
+ * Utilizes React.StrictMode for highlighting potential problems in the application.
+ */
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
