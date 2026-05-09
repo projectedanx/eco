@@ -1,3 +1,7 @@
+/**
+ * Represents a functional mechanism within the ECO Protocol.
+ * Used to define surrogate reasoning, antifragility, and inference tools.
+ */
 export interface Mechanism {
   title: string;
   principle?: string;
@@ -7,6 +11,10 @@ export interface Mechanism {
   automated_refinement_cycle?: string;
 }
 
+/**
+ * Describes a high-level feature within the pluriversal codebase.
+ * Captures product requirements including stories, criteria, and complexity.
+ */
 export interface Feature {
   title: string;
   overview: string;
@@ -18,6 +26,10 @@ export interface Feature {
   complexity?: string;
 }
 
+/**
+ * Defines the core identity, constraints, and mission of a sovereign agent.
+ * Acts as the strict prompt template enforcing behavioral invariants.
+ */
 export interface AgentBlueprint {
   name: string;
   codename: string;
@@ -35,6 +47,10 @@ export interface AgentBlueprint {
   core_mission: string;
 }
 
+/**
+ * Encapsulates a cognitive bytecode pattern within the epistemic lexicon.
+ * Used to define and measure architectural mappings and pathological decay.
+ */
 export interface LexiconPattern {
   id: string;
   title: string;
@@ -61,6 +77,10 @@ export interface LexiconPattern {
   measurement?: string;
 }
 
+/**
+ * Represents a Prompt Decorator Language (PDL) element used to enforce
+ * structural topology on agent attention routing and generation.
+ */
 export interface LexiconDecorator {
   decorator: string;
   layer: string;
@@ -68,6 +88,10 @@ export interface LexiconDecorator {
   key_parameter: string;
 }
 
+/**
+ * The root architectural blueprint defining the complete ECO Protocol structure.
+ * Aggregates mechanisms, metrics, features, and agent definitions into a cohesive whole.
+ */
 export interface ECO_Protocol_Blueprint {
   Protocol_Name: string;
   The_Blend_Emergent_Structure: string;

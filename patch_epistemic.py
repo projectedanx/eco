@@ -1,6 +1,17 @@
 import re
 
 def update_epistemic_matrix():
+    """
+    Updates the epistemic matrix data file to include the VIPER blueprint.
+
+    This function reads the 'src/data/epistemicMatrix.ts' file, searches for the
+    Agent_Blueprints array, and appends the V.I.P.E.R. persona definition if it
+    does not already exist. The resulting patched content is written back to the file.
+
+    Returns:
+        None: Prints a success message if patched, or a warning if the blueprint
+              already exists or the array cannot be found.
+    """
     with open('src/data/epistemicMatrix.ts', 'r') as f:
         content = f.read()
 

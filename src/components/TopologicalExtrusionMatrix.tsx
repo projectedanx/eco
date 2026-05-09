@@ -1,5 +1,10 @@
 import React from 'react';
 
+/**
+ * YAML representation of the Product Definition & Topology (PD&T) Specification.
+ * This acts as the DFA schema enforcing topological boundaries and metric tolerances
+ * for the generated components of the 2026 Design Futures Report.
+ */
 const yamlData = `PDT_SPECIFICATION_BLOCK:
   PART_NAME: 2026_Design_Futures_Report
   FEATURES:
@@ -39,6 +44,13 @@ const yamlData = `PDT_SPECIFICATION_BLOCK:
         - CONTROL(PROFILE) | TYPE(STRUCTURAL_PROFILE) | RULE(Must map across 8 distinct architectural layers: Network I/O, VRAM Allocation, Disk Read/Write, CPU Threading, Garbage Collection Cycles, Base Image Sys.Modules, Cross-Architecture Binaries, Epistemic Reasoning Delta.)
         - CONTROL(DENSITY) | ENFORCEMENT(MAXIMUM) | RULE(Zero marketing filler. Each node must contain distinct, executable logic or quantifiable metric deltas.)`;
 
+/**
+ * Renders the Topological Extrusion Matrix section of the UI.
+ * This component displays the DFA schema enforcement rules (YAML format)
+ * which dictate the strict operational boundaries of the generated personas.
+ *
+ * @returns {React.ReactElement} The rendered matrix view containing the semantic metrology spec.
+ */
 export const TopologicalExtrusionMatrix: React.FC = () => {
   return (
     <div className="md:col-span-2 mt-8 bg-brand-surface rounded-lg p-6 border border-brand-border shadow-md">
