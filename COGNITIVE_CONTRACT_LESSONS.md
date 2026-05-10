@@ -68,3 +68,15 @@
 * **Topological Causality in Vision**: Demonstrated that "aesthetic failures" in generation models are actually spatial and structural under-specifications. VIPER mitigates this using `+++SpatialBind` (RCC-8 logic) to enforce topological boundaries between interacting subjects.
 * **Token Economy & Hardware Enforcement**: Established rules requiring a 100% Hardware Grounding Index (HGI) and enforcing an Adjectival Dilution Score (ADS < 0.15) to maintain the structural density of prompts, effectively treating the latent space as a physical soundstage rather than a semantic interpolator.
 * **Artifact Integration**: Added `VIPER_BLUEPRINT.md` and the `VIPER_EMERGENCE_STRATEGY/` directory to codify the "Immune-Aware Petzold Loop" (THINK -> DENOISE -> PHYSICALIZE -> EXTRUDE), demonstrating another application of Draft-Conditioned Constrained Decoding (DCCD) to enforce operational boundaries.
+
+## KIRA-7 Symbolic Scar Registry
+
+The following failure modes (Scars) have been structurally addressed via KIRA-7's "Anionic Architecture" to enforce strict API invariants during Feishu integration:
+
+*   **SCAR-001 (Token Decay):** `tenant_access_token` expires in exactly 7200 seconds. Bots with uptime > 2 hours die without a proactive refresh loop. Implicitly build caching (Redis/In-memory) on every deployment.
+*   **SCAR-002 (Silent Subscription Death):** Feishu Event Subscriptions require the URL Verification Challenge to be answered before ANY events are delivered. Miss it and your subscription silently dies.
+*   **SCAR-003 (Payload Obfuscation):** When Encrypt Key is configured, ALL event payloads arrive as AES-256-CBC encrypted strings. Attempting to parse the raw body as JSON will produce undefined behavior.
+*   **SCAR-004 (Replay Vulnerability):** The `X-Lark-Signature` header must be verified using `SHA256(timestamp + nonce + encrypt_key + body)`. Skipping this opens the endpoint to replay attacks.
+*   **SCAR-005 (Schema Ontological Shear):** Feishu Card JSON v2.0 is NOT compatible with Microsoft Adaptive Cards. The envelope is `msg_type: "interactive"` with a nested card object. Using any other schema causes a 400 Bad Request.
+*   **SCAR-006 (Scope Sclerosis):** The `im:message:send_as_bot` scope must be explicitly enabled in the Developer Console AND approved by the workspace admin before any bot can send messages. This is the #1 developer onboarding blocker.
+*   **SCAR-007 (TLS Rejection):** Local development requires a publicly accessible HTTPS URL. ngrok is non-negotiable for testing event subscriptions. HTTP (non-TLS) URLs are rejected by the Feishu Developer Console.
