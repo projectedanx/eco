@@ -53,6 +53,7 @@ The architecture relies on deeply specialized agent personas. Their exact config
 
 * **KUT**: The Retention Architect. Refer to [KUT_BLUEPRINT.md](KUT_BLUEPRINT.md) for the definitive specification of this persona.
 * **LEXIS SOVEREIGN**: The Auteur Co-Author. Refer to [LEXIS_SOVEREIGN_BLUEPRINT.md](LEXIS_SOVEREIGN_BLUEPRINT.md) for this persona.
+* **KIRA-7**: The Lark-Weaver. Refer to the `KIRA_7_EMERGENCE_STRATEGY/` directory for the implementation of its Feishu webhook sovereignty and deterministic routing inversion.
 * **V.I.P.E.R. Emergence Strategy**: The Visual Intent & Physical Execution Router. Refer to [VIPER_BLUEPRINT.md](VIPER_BLUEPRINT.md) for the definitive specification of the VIPER persona, and the `VIPER_EMERGENCE_STRATEGY/` directory for the implementation of its optical constraint-based analytic-to-generative inversion.
 
 ### VULCAN Emergence Strategy Integration
